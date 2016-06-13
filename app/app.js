@@ -1,15 +1,14 @@
-// Now app.js plays the central role of handling routing and is thus the "starting point" in our code.
+/**
+ * Created by Walter on 6/13/2016.
+ */
+//Dependencies
 var React = require('react');
 var ReactDOM = require('react-dom');
-
-// Grab the property associated with the Router
 var Router = require('react-router').Router;
-
-// We are going to create a routes object 
 var routes = require('./config/routes');
 
+//reactDOM renderer
 ReactDOM.render(
-	// routes will tell us which route to go to depending on which route we are looking at 
-	<Router>{routes}</Router>,
-	document.getElementById('app')
+    <Router>{routes}</Router>,
+    document.getElementById('app')
 )
